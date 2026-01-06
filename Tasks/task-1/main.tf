@@ -33,8 +33,8 @@ terraform {
 #-------------------------------------------------------------------------------
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIAUX6LAIFILNNQGUOO"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 #-------------------------------------------------------------------------------
@@ -296,3 +296,4 @@ output "alb_url" {
   description = "URL to access the web application"
   value       = "http://${aws_lb.webapp.dns_name}"
 }
+
